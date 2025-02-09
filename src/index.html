@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tic Tac Toe</title>
+    <script src="https://kit.fontawesome.com/f7d0640504.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 from-20% to-emerald-700 flex flex-col col h-dvh">
+    
+    <h1 class="text-white font-bold text-center text-[60px] font-mono mt-10 hidden" id="gameHeading">Tic-Tac-Toe Game</h1>
+    <div class="justify-center items-center flex-grow hidden" id="gameDiv">
+        <div class="bg-slate-400 size-[350px] grid grid-cols-3 grid-rows-3 p-3 rounded-lg shadow-black shadow-xl" id="grid">
+            <div class="p-2"><button class="bg-white w-full h-full rounded-lg text-black" id="1"></button></div>
+            <div class="p-2"><button class="bg-white w-full h-full rounded-lg text-black" id="2"></button></div>
+            <div class="p-2"><button class="bg-white w-full h-full rounded-lg text-black" id="3"></button></div>
+            <div class="p-2"><button class="bg-white w-full h-full rounded-lg text-black" id="4"></button></div>
+            <div class="p-2"><button class="bg-white w-full h-full rounded-lg text-black" id="5"></button></div>
+            <div class="p-2"><button class="bg-white w-full h-full rounded-lg text-black" id="6"></button></div>
+            <div class="p-2"><button class="bg-white w-full h-full rounded-lg text-black" id="7"></button></div>
+            <div class="p-2"><button class="bg-white w-full h-full rounded-lg text-black" id="8"></button></div>
+            <div class="p-2"><button class="bg-white w-full h-full rounded-lg text-black" id="9"></button></div>
+        </div>
+    </div>
+    
+    <dialog id="dialogBox" class="p-5 rounded-xl backdrop:backdrop-blur-lg">
+        <h1 class="text-[40px] font-mono">Congratulations.. 🎉🎉🎉</h1>
+        <h2 id="winner" class="text-center text-[30px] font-mono my-3"></h2>
+        <div class="w-full flex justify-center">
+        <button class="bg-green-400 rounded-md border-none p-3 text-[20px] w-fit" id="restart"><i class="fa-solid fa-rotate"></i> Restart</button>
+        </div>
+    </dialog>
+    
+    <dialog id="inputDialog" class="bg-gray-900 text-white font-mono backdrop:backdrop-blur-md rounded-xl">
+        <div class="flex flex-col gap-4 p-8 font-bold text-[20px] px-20">
+        <h2 class="text-[30px]">Player Information</h2>
+        <label for="xPlayer">
+            <i class="fa-solid fa-user mr-4"></i>X Player :
+        </label>
+        <input type="text" id="XplayerName" class="border border-black rounded-md text-black px-3">
+        <!-- <br> -->
+        <label for="yPlayer">
+            <i class="fa-solid fa-user mr-4"></i>0 Player :
+        </label>
+        <input type="text" id="YplayerName" class="border border-black rounded-md text-black px-3">
+    
+        <button class="bg-emerald-600 p-2 bg-opacity-100 w-fit m-auto rounded-lg" id="saveInfo"> <i class=""></i>Save Info</button>
+        </div>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
